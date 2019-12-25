@@ -1,0 +1,6 @@
+usr/local/bin/babycoin-qt usr/bin
+share/pixmaps/babycoin32.xpm usr/share/pixmaps
+share/pixmaps/babycoin16.xpm usr/share/pixmaps
+share/pixmaps/babycoin128.png usr/share/pixmaps
+debian/babycoin-qt.desktop usr/share/applications
+debian/babycoin-qt.protocol usr/share/kde4/services/

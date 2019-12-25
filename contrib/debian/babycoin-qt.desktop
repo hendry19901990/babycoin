@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Babycoin Core
+Comment=Connect to the Babycoin P2P Network
+Comment[de]=Verbinde mit dem Babycoin peer-to-peer Netzwerk
+Comment[fr]=Babycoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Babycoin, eşten eşe kriptografik sanal para birimi
+Exec=babycoin-qt %u
+Terminal=false
+Type=Application
+Icon=babycoin128
+MimeType=x-scheme-handler/babycoin;
+Categories=Office;Finance;

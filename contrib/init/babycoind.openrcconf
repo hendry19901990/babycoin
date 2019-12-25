@@ -1,0 +1,33 @@
+# /etc/conf.d/babycoind: config file for /etc/init.d/babycoind
+
+# Config file location
+#BABYCOIND_CONFIGFILE="/etc/babycoin/babycoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BABYCOIND_USER)
+#BABYCOIND_PIDDIR="/var/run/babycoind"
+
+# What filename to give the pidfile
+#BABYCOIND_PIDFILE="${BABYCOIND_PIDDIR}/babycoind.pid"
+
+# Where to write babycoind data (be mindful that the blockchain is large)
+#BABYCOIND_DATADIR="/var/lib/babycoind"
+
+# User and group to own babycoind process
+#BABYCOIND_USER="babycoin"
+#BABYCOIND_GROUP="babycoin"
+
+# Path to babycoind executable
+#BABYCOIND_BIN="/usr/bin/babycoind"
+
+# Nice value to run babycoind under
+#BABYCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BABYCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for babycoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BABYCOIND_SIGTERM_TIMEOUT=60

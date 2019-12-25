@@ -1,0 +1,11 @@
+[Protocol]
+exec=babycoin-qt '%u'
+protocol=babycoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

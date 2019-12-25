@@ -1,0 +1,22 @@
+[Unit]
+Description=Babycoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=babycoin
+Group=babycoin
+
+Type=forking
+PIDFile=/var/lib/babycoind/babycoind.pid
+ExecStart=/usr/bin/babycoind -daemon -pid=/var/lib/babycoind/babycoind.pid \
+-conf=/etc/babycoin/babycoin.conf -datadir=/var/lib/babycoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
